@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+</head>
+<body>
+
+  <div id="navbar"></div>
+
+  <h1>Welcome to Modular JS App</h1>
+
+  <div id="footer"></div>
+
+  <script type="module">
+    import { navbar } from "./components/navbar.js";
+    import { footer } from "./components/footer.js";
+
+    document.getElementById("navbar").innerHTML = navbar();
+    document.getElementById("footer").innerHTML = footer();
+  </script>
+
+</body>
+</html>
